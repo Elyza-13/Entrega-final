@@ -1,90 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-
-body{
-    font-family:'Tektur', cursiva;
-
+* {
+    font-family: 'Roboto Mono', monospace;
     padding: 0px;
     margin: 0px;
-    background: linear-gradient(90deg, #1D3557 0%, #E63946 100%);
 }
 
-#main{
-    display: flex;
+body{
+    width: auto;
+    background-color: #D76E6B;
+}
+
+#container {
+
+    text-align: justify;
+    color: #020102;
+    background: linear-gradient(90deg,
+            #D76E6B 50%,
+            #6E3332 100%);
+
+}
+
+#box {
+    text-align: center;
+    background-color: #D76E6B;
+    border-color: #020102;
+    font-size: large;
+    
+}
+
+#box img, p {
+    border-style: solid;
+    position:relative;top:0;
+    padding:4px;
+    transition: all .2s ease-in-out
+    
+}
+#box img:hover{
+    top:-4px;
+    box-shadow:0 4px 3px #6E3332
+}
+
+#box a {
+    color: #D76E6B;
+    background-color: #020102;
+    border-style: solid;
+    border-color: #D76E6B;
+    position:relative;top:0;
+    padding:4px;
+    transition: all .2s ease-in-out
+    
+}
+
+#box a:hover{
+    top:-4px;
+    box-shadow:0 4px 3px #6E3332
+}
+
+
+h2 {
+    text-align: center;
+    color: #D76E6B;
+    background-color: #020102;
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    color: #D76E6B;
+    background-color: #020102;
+    font-size: 20px;
+}
+@keyframes animacao_02{
+    from{opacity: 0; transform: scale(0.5); }
+    to{opacity: 1; transform: scale(1); }
+}
+
+
+Carrossel
+
+#carrossel{
+    background-color: #D76E6B;
+    
+    
+}
+
+
+Inicio footer
+
+.footer-arrow svg {
+    width:100%;
+    background-image: linear-gradient(180deg,#D76E6B ,#6E3332 );
+
+}
+
+.footer-arrow .shape-fill {
+    fill: #D76E6B;
+    
+}
+
+#box2, #box1{
     width: 100%;
+    background-color: #6E3332;
+    border: none;
+}
+#box2 p, #box1 p{
+    width: 100%;
+    background-color: #6E3332;
+    border: none;
 }
 
-#form_box{
-    margin: auto;
-    width: max-content;
-    padding: 45px;
-    background: linear-gradient(90deg, #E63946 0%, #1D3557 100%);
-    border-radius: 10px;
+#colfooter{
+    border-style: dotted;
+    border-color: #FCEBC0;
 }
-
-#form_box h2{
-    padding: 30px;
+#colfooter .titleFooter {
+    color: #FCEBC0;
     text-align: center;
 }
 
-#f_alert{
-    display: none;
-    background-color: #E63946;
-    padding: 12px;
-    color: #ffffff;
-    border-radius: 5px;
+#colfooter p {
+    color: #FCEBC0;
+    text-align: center;
 }
 
-.f_line{
-    display: flex;
+#colfooter .redesocial {
+    text-align: center;
+    color: #FCEBC0;
+    text-decoration: none;
+    width: 100%;
+    float: left;
+    transition: 0.2s;
 }
 
-.f_line span{
-    padding: 10px;
+#colfooter .redesocial:hover {
+
+    color: #D76E6B;
+    transition: 0.2s;
 }
 
-.f_line label{
-    display: block;
-    padding-bottom: 4px;
+#box2 {
+    width: 100%;
+    background-color: #6E3332;
+    color: #FCEBC0;
+    
+}
+P { text-align: center }
+
+.by i {
+    margin-right: 2px;
+    color: #e82626;
 }
 
-.f_line input[type=text], input[type=date],input[type=email], input[type=url]
-
-{
-    width: 250px;
-    height: 20px;
-    border: 2px solid #F1FAEE;
-    border-radius: 5px;
-}
-
-.f_line input[type=radio]{
-    border: 2px solid #ffffff;
-}
-
-.f_line input[type=file],input[type=color]{
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-}
-
-select{
-    width: 258px;
-    height: 32px;
-    border: 1px solid #F1FAEE;
-    border-radius: 5px;
-}
-
-#btt_form{
-    cursor: pointer;
-    width: 532px;
-    height: 35px;
-    background-color: #457B9D;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 19px;
-    transition: 0.5s;
-}
-
-#btt_form:hover{
-    transition: 0.5s;
-    background-color: #A8DADC;
-}
