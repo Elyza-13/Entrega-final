@@ -64,7 +64,8 @@ button {
     font-size: 50px;
     color: #fcebc0;
     background-color: #6E3332;
-    
+    border-style: dotted;
+    border-color: #FCEBC0;
 }
 
 
