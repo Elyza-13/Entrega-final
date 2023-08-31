@@ -13,8 +13,12 @@ h1 {
     font-size: 40px;
 }
 
-#box{
-background-color: #D76E6B;
+#box {
+    text-align: center;
+    background-color: #D76E6B;
+    font-size: large;
+    border: none;
+    
 }
 
 estilo quiz 
@@ -23,8 +27,9 @@ estilo quiz
     padding: 30px;
     margin: 5px;
     text-align: center;
-    border-radius: 10px;
-  
+    background: linear-gradient(90deg,
+            #D76E6B 50%,
+            #6E3332 100%);
 
            
 }
@@ -32,18 +37,14 @@ estilo quiz
 
 .question {
     font-size: 50px;
-    background-color: #D76E6B;
-    border-radius: 10px;
-    border-style: dotted;
-    border-color: #FCEBC0;
-    
+    background: linear-gradient(90deg,
+            #6E3332 50%,
+            #D76E6B 100%);
 }
 
 .options {
     font-size: 30px;
     padding: 25px;
-    border-style: dotted;
-    border-color: #FCEBC0;
     background: linear-gradient(90deg,
             #6E3332 50%,
             #D76E6B 100%);
@@ -63,8 +64,7 @@ button {
     font-size: 50px;
     color: #fcebc0;
     background-color: #6E3332;
-    border-style: dotted;
-    border-color: #FCEBC0;
+    
 }
 
 
